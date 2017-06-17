@@ -52,6 +52,7 @@ $(document).ready(function() {
       }
 
       $('#descriptions-wrap').append(render_event(description));
+      $('#event-description').val('');
       localStorage['descriptions'] = JSON.stringify(data);
     }
 
