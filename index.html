@@ -5,20 +5,29 @@
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
   </head>
   <body>
-    <input type="date"/>
+    <div class="container">
+      <h1>Homify - Task 3</h1>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <input type="date" />
 
-    <form id="event-form">
-      <fieldset class="form-group">
-        <label for="event-description">Event description</label>
-        <textarea class="form-control" id="event-description" rows="3"></textarea>
-      </fieldset>
-      <button type="submit" class="btn btn-primary">Create Event</button>
-    </form>
+          <button id="reset-btn" class="btn btn-primary">Reset Calendar</button>
 
-    <button id="reset-btn" class="btn btn-primary">Reset Calendar</button>
+          <form id="event-form">
+            <fieldset class="form-group">
+              <label for="event-description">Event description</label>
+              <textarea class="form-control" id="event-description" rows="3"></textarea>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Create Event</button>
+          </form>
 
-    <div id="descriptions-wrap">
-      No events found
+
+          <h2>Events:</h2>
+          <ul id="descriptions-wrap" class="list-group">
+            No events found
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script
