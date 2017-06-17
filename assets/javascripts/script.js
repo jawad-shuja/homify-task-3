@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  var current_date = new Date().toISOString().slice(0,10);
+  $('input[type="date"]').val(current_date);
+
   $('#reset-btn').click(function() {
     localStorage.clear();
     $('#descriptions-wrap').html('No events found');
